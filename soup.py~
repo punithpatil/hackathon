@@ -1,7 +1,0 @@
-import bs4
-import urllib
-import re
-html = open('output.txt', 'r')
-soup = bs4.BeautifulSoup(html, 'html.parser')
-target = open('processed.txt','w')
-target.write(soup.get_text())
