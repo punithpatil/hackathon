@@ -7,5 +7,8 @@ chmod +x setup.sh
 
 ./setup.sh
 
+Packages required: BeautifulSoup, nltk, nltk data
+
+Run main.py
 
 WARNING: Running the program repeatedly with same keyword will prompt Google to send a warning and consider it an "Abuse" of their API.
