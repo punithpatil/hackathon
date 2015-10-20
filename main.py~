@@ -6,7 +6,7 @@ import summary
 def main():
 	
 	print("Enter search query")
-	query = raw_input()
+	query = input()
 	q = link_extractor.main(query)
 	summary.main(query)
 
