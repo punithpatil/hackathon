@@ -103,6 +103,7 @@ class pygoogle:
             self.logger.debug('search: "%s" page# : %s'%(self.query, page))
             q = urllib.urlencode(args)
             search_results = urllib.urlopen(URL+q)
+
             data = json.loads(search_results.read())
             if not data.has_key('responseStatus'):
                 self.logger.error('response does not have a responseStatus key')

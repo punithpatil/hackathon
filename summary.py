@@ -89,15 +89,14 @@ class SummaryTool(object):
  
 def main(args):
     title = args  #user query, taken from runMe
-    
+    content = ''
+    para=[]
     value = 2                  #depending on linkFile
     for i in range(0,7):
         f = open(os.getcwd() + "/data/" + title +'_' + str(i) + ".txt", 'r')
         f1 = open(os.getcwd() + "/data" + "/summary" + title + str(i) + ".txt", 'w')
-    #f1 = open( "processsumm.txt", 'w')
-    #f = open(os.getcwd() + "//data" + "\meh.txt", 'r')   
         content = f.read()
- 
+        
         st = SummaryTool()
  
    
